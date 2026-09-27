@@ -1,0 +1,53 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 90vmin;
+  height: 90vmin;
+  grid-template-areas: 
+      "wide1 wide1 wide2 wide2 wide2 wide2"
+      "wide1 wide1 wide3 wide3 wide4 wide4"
+      "wide1 wide1 wide3 wide3 wide4 wide4" 
+      "wide5 wide5 wide5 wide6 wide4 wide4"
+      "wide5 wide5 wide5 wide6 wide7 wide7"
+      "wide5 wide5 wide5 wide6 wide7 wide7"
+  ;
+
+  gap: 3px;
+  background-color: black;
+}
+
+.item-1 {
+  background-color:blue;
+  grid-area: wide1;
+}
+
+.item-2 {
+  background-color:lightgrey;
+  grid-area: wide2;
+}
+
+.item-3 {
+  background-color: yellow;
+  grid-area: wide3;
+}
+
+.item-4 {
+  background-color: lightgray;
+  grid-area: wide4;
+}
+
+.item-5{
+  background-color: red;
+  grid-area: wide5;
+}
+
+.item-6{
+  background-color: black;
+  grid-area: wide6;
+}
+
+.item-7{
+  background-color: lightgray;
+  grid-area: wide7;
+}
